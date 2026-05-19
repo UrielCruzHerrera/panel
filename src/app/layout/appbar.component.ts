@@ -57,6 +57,7 @@ import { CommonModule } from '@angular/common';
       font-family: "Oswald", sans-serif;
       font-optical-sizing: auto;
       font-style: normal;
+      text-transform: uppercase;
     }
 
     .appbar-info {

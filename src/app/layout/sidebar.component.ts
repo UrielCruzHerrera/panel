@@ -167,14 +167,14 @@ interface MenuItem {
 })
 export class SidebarComponent {
   menuItems = input<MenuItem[]>([
-    { label: 'Dashboard', icon: '', route: '/dashboard' },
-    { label: 'Ventilación', icon: '', route: '/ventilacion' },
-    { label: 'Criadoras', icon: '', route: '/criadoras' },
-    { label: 'Bombas', icon: '', route: '/bombas' },
-    { label: 'Mortalidad', icon: '', route: '/mortalidad' },
-    { label: 'Consumo Diario', icon: '', route: '/consumo' },
-    { label: 'Registro de Peso', icon: '', route: '/peso' },
-    { label: 'Medicación', icon: '', route: '/medicacion' },
-    { label: 'Reportes', icon: '', route: '/reportes' }
+    { label: 'DASHBOARD', icon: '', route: '/dashboard' },
+    { label: 'VENTILACIÓN', icon: '', route: '/ventilacion' },
+    { label: 'CRIADORAS', icon: '', route: '/criadoras' },
+    { label: 'BOMBAS', icon: '', route: '/bombas' },
+    { label: 'MORTALIDAD', icon: '', route: '/mortalidad' },
+    { label: 'CONSUMO DIARIO', icon: '', route: '/consumo' },
+    { label: 'REGISTRO DE PESO', icon: '', route: '/peso' },
+    { label: 'MEDICACIÓN', icon: '', route: '/medicacion' },
+    { label: 'REPORTES', icon: '', route: '/reportes' }
   ]);
 }

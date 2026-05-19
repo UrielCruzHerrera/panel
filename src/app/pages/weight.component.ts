@@ -106,7 +106,10 @@ import { WeightRecord } from '../shared/models';
   `,
   styles: [`
     .page-container {
-      max-width: 1000px;
+      display: block;
+      width: 100%;
+      max-width: 100%;
+      box-sizing: border-box;
     }
 
     .page-header {
@@ -133,6 +136,8 @@ import { WeightRecord } from '../shared/models';
     }
 
     .table-container {
+      width: 100%;
+      box-sizing: border-box;
       background: white;
       border-radius: 8px;
       overflow: hidden;
