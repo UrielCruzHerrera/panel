@@ -4,7 +4,7 @@ export interface Ventilator {
   entrada: string;
   salida: string;
   estado: string;
-  tiempo: string;
+  tiempo?: string;
 }
 
 export interface Brooder {

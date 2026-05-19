@@ -35,7 +35,7 @@ import { Brooder } from '../shared/models';
               <th>Criadora</th>
               <th>Entrada</th>
               <th>Salida</th>
-              <th>Tiempo</th>
+              <th>Tiempo (s)</th>
             </tr>
           </thead>
           <tbody>
@@ -86,8 +86,8 @@ import { Brooder } from '../shared/models';
             </div>
 
             <div class="form-group">
-              <label>Tiempo</label>
-              <input type="text" [(ngModel)]="editFormData.tiempo" />
+              <label>Tiempo (s)</label>
+              <input type="text" placeholder="Segundos" [(ngModel)]="editFormData.tiempo" />
             </div>
 
             <div class="form-actions">
@@ -252,9 +252,9 @@ import { Brooder } from '../shared/models';
 })
 export class BroodersComponent {
   brooders = signal<Brooder[]>([
-    { id: 1, name: 'Criadora 1', entrada: 'Lado A', salida: 'Lado B', tiempo: '1h 45m' },
-    { id: 2, name: 'Criadora 2', entrada: 'Lado C', salida: 'Lado D', tiempo: '1h 45m' },
-    { id: 3, name: 'Criadora 3', entrada: 'Lado E', salida: 'Lado F', tiempo: '1h 45m' }
+    { id: 1, name: 'Criadora 1', entrada: 'Lado A', salida: 'Lado B', tiempo: '6300' },
+    { id: 2, name: 'Criadora 2', entrada: 'Lado C', salida: 'Lado D', tiempo: '6300' },
+    { id: 3, name: 'Criadora 3', entrada: 'Lado E', salida: 'Lado F', tiempo: '6300' }
   ]);
 
   selectedBrooder = signal<Brooder | null>(null);

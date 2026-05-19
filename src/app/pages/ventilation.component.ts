@@ -37,7 +37,6 @@ import { Ventilator } from '../shared/models';
               <th>Entrada</th>
               <th>Salida</th>
               <th>Estado</th>
-              <th>Tiempo</th>
             </tr>
           </thead>
           <tbody>
@@ -63,7 +62,6 @@ import { Ventilator } from '../shared/models';
                     {{ ventilator.estado }}
                   </span>
                 </td>
-                <td>{{ ventilator.tiempo }}</td>
               </tr>
             }
           </tbody>
@@ -92,10 +90,7 @@ import { Ventilator } from '../shared/models';
               <input type="text" [(ngModel)]="editFormData.salida" />
             </div>
 
-            <div class="form-group">
-              <label>Tiempo</label>
-              <input type="text" [(ngModel)]="editFormData.tiempo" />
-            </div>
+            
 
             <div class="form-actions">
               <app-button variant="primary" (click)="saveEdit()">
@@ -279,18 +274,17 @@ import { Ventilator } from '../shared/models';
 })
 export class VentilationComponent {
   ventilators = signal<Ventilator[]>([
-    { id: 1, name: 'Ventilador 1', entrada: '220V', salida: '60%', estado: 'Activo', tiempo: '2h 30m' },
-    { id: 2, name: 'Ventilador 2', entrada: '220V', salida: '70%', estado: 'Activo', tiempo: '2h 30m' },
-    { id: 3, name: 'Ventilador 3', entrada: '220V', salida: '50%', estado: 'Activo', tiempo: '2h 30m' },
-    { id: 4, name: 'Ventilador 4', entrada: '220V', salida: '65%', estado: 'Activo', tiempo: '2h 30m' }
+    { id: 1, name: 'Ventilador 1', entrada: '220V', salida: '60%', estado: 'Activo' },
+    { id: 2, name: 'Ventilador 2', entrada: '220V', salida: '70%', estado: 'Activo' },
+    { id: 3, name: 'Ventilador 3', entrada: '220V', salida: '50%', estado: 'Activo' },
+    { id: 4, name: 'Ventilador 4', entrada: '220V', salida: '65%', estado: 'Activo' }
   ]);
 
   selectedVentilator = signal<Ventilator | null>(null);
   showEditModal = signal(false);
   editFormData = {
     entrada: '',
-    salida: '',
-    tiempo: ''
+    salida: ''
   };
 
   selectVentilator(ventilator: Ventilator) {
@@ -302,8 +296,7 @@ export class VentilationComponent {
     if (selected) {
       this.editFormData = {
         entrada: selected.entrada,
-        salida: selected.salida,
-        tiempo: selected.tiempo
+        salida: selected.salida
       };
       this.showEditModal.set(true);
     }

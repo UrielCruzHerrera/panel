@@ -35,7 +35,7 @@ import { Pump } from '../shared/models';
               <th>Bomba</th>
               <th>Entrada</th>
               <th>Salida</th>
-              <th>Tiempo</th>
+              <th>Tiempo (s)</th>
             </tr>
           </thead>
           <tbody>
@@ -86,8 +86,8 @@ import { Pump } from '../shared/models';
             </div>
 
             <div class="form-group">
-              <label>Tiempo</label>
-              <input type="text" [(ngModel)]="editFormData.tiempo" />
+              <label>Tiempo (s)</label>
+              <input type="text" placeholder="Segundos" [(ngModel)]="editFormData.tiempo" />
             </div>
 
             <div class="form-actions">
@@ -252,8 +252,8 @@ import { Pump } from '../shared/models';
 })
 export class PumpsComponent {
   pumps = signal<Pump[]>([
-    { id: 1, name: 'Bomba 1', entrada: 'Agua Fresca', salida: '80%', tiempo: '3h 20m' },
-    { id: 2, name: 'Bomba 2', entrada: 'Agua Fresca', salida: '75%', tiempo: '3h 20m' }
+    { id: 1, name: 'Bomba 1', entrada: 'Agua Fresca', salida: '80%', tiempo: '12000' },
+    { id: 2, name: 'Bomba 2', entrada: 'Agua Fresca', salida: '75%', tiempo: '12000' }
   ]);
 
   selectedPump = signal<Pump | null>(null);
