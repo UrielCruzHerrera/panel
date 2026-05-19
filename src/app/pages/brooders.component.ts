@@ -12,7 +12,6 @@ import { Brooder } from '../shared/models';
   template: `
     <div class="page-container">
       <div class="page-header">
-        <h1 class="page-title">Gestión de Criadoras</h1>
         <p class="page-description">Monitoreo y control de criadoras del galpón</p>
       </div>
 

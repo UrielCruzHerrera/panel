@@ -17,7 +17,7 @@ import { CommonModule } from '@angular/common';
             <span class="info-text">{{ currentDate() }}</span>
           </div>
           <div class="info-item">
-            <span class="info-text">{{ currentTime() }}</span>
+            <span class="info-text electrolize-time">{{ currentTime() }}</span>
           </div>
           <div class="info-item day-indicator">
             <span class="day-badge">Día {{ flockAge() }}</span>
@@ -54,6 +54,9 @@ import { CommonModule } from '@angular/common';
       font-weight: 600;
       color: #001d4a;
       letter-spacing: 0.3px;
+      font-family: "Oswald", sans-serif;
+      font-optical-sizing: auto;
+      font-style: normal;
     }
 
     .appbar-info {
@@ -92,6 +95,14 @@ import { CommonModule } from '@angular/common';
       font-weight: 600;
       font-size: 13px;
       letter-spacing: 0.3px;
+    }
+
+    .electrolize-time {
+      font-family: "Electrolize", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 15px;
+      letter-spacing: 1px;
     }
 
     @media (max-width: 768px) {
@@ -147,7 +158,7 @@ export class AppbarComponent implements OnInit {
       second: '2-digit'
     });
 
-    this.currentDate.set(dateFormatter.format(now));
+    this.currentDate.set(dateFormatter.format(now).toUpperCase());
     this.currentTime.set(timeFormatter.format(now));
   }
 }

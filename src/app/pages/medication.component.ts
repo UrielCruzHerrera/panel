@@ -12,7 +12,6 @@ import { MedicationRecord } from '../shared/models';
   template: `
     <div class="page-container">
       <div class="page-header">
-        <h1 class="page-title">Registros de Medicación</h1>
         <p class="page-description">Seguimiento de tratamientos y medicamentos aplicados</p>
       </div>
 

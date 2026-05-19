@@ -8,8 +8,6 @@ import { CardComponent } from '../shared/components/card.component';
   imports: [CommonModule, CardComponent],
   template: `
     <div class="dashboard-container">
-      <h1 class="dashboard-title">Monitoreo en Tiempo Real</h1>
-
       <div class="dashboard-grid">
         <app-card
           title="Temperatura"

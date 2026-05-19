@@ -20,7 +20,6 @@ interface SummaryCard {
   template: `
     <div class="reports-container">
       <div class="reports-header">
-        <h1 class="reports-title">Reportes</h1>
         <p class="reports-subtitle">Consulta y preparación de reportes de la parvada y del ambiente del galpón.</p>
       </div>
 

@@ -12,7 +12,6 @@ import { WeightRecord } from '../shared/models';
   template: `
     <div class="page-container">
       <div class="page-header">
-        <h1 class="page-title">Registros de Peso</h1>
         <p class="page-description">Seguimiento de peso promedio de la parvada</p>
       </div>
 

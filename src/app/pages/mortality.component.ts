@@ -12,7 +12,6 @@ import { MortalityRecord } from '../shared/models';
   template: `
     <div class="page-container">
       <div class="page-header">
-        <h1 class="page-title">Registros de Mortalidad</h1>
         <p class="page-description">Seguimiento de mortalidad en la parvada</p>
       </div>
 

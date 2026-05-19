@@ -16,7 +16,7 @@ interface MenuItem {
     <aside class="sidebar">
       <div class="sidebar-header">
         <div class="logo">
-          <span class="logo-text">AviMax</span>
+          <img src="/avimax-icon-blue.png" alt="AviMax" class="logo-image">
         </div>
       </div>
 
@@ -61,10 +61,17 @@ interface MenuItem {
     .logo {
       display: flex;
       align-items: center;
+      justify-content: center;
       gap: 10px;
       font-size: 24px;
       font-weight: 700;
       color: white;
+    }
+
+    .logo-image {
+      height: 90px;
+      width: auto;
+      object-fit: contain;
     }
 
     .logo-icon {
@@ -90,7 +97,7 @@ interface MenuItem {
       text-decoration: none;
       transition: all 0.3s ease;
       cursor: pointer;
-      font-size: 14px;
+      font-size: 17px;
       font-weight: 500;
       margin: 0 8px;
       border-radius: 6px;
@@ -118,6 +125,11 @@ interface MenuItem {
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
+      font-family: "Oswald", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 500;
+      font-style: normal;
+      letter-spacing: 0.5px;
     }
 
     .sidebar-footer {

@@ -12,7 +12,6 @@ import { ConsumptionRecord } from '../shared/models';
   template: `
     <div class="page-container">
       <div class="page-header">
-        <h1 class="page-title">Registros de Consumo Diario</h1>
         <p class="page-description">Seguimiento del consumo de alimento</p>
       </div>
 

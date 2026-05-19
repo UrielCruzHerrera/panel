@@ -12,7 +12,7 @@ import { Ventilator } from '../shared/models';
   template: `
     <div class="page-container">
       <div class="page-header">
-        <h1 class="page-title">Gestión de Ventiladores</h1>
+
         <p class="page-description">Monitoreo y control de ventiladores del galpón</p>
       </div>
 
