@@ -8,6 +8,7 @@ import { MortalityComponent } from './pages/mortality.component';
 import { ConsumptionComponent } from './pages/consumption.component';
 import { WeightComponent } from './pages/weight.component';
 import { MedicationComponent } from './pages/medication.component';
+import { ReportsComponent } from './pages/reports.component';
 
 export const routes: Routes = [
   {
@@ -22,7 +23,8 @@ export const routes: Routes = [
       { path: 'mortalidad', component: MortalityComponent },
       { path: 'consumo', component: ConsumptionComponent },
       { path: 'peso', component: WeightComponent },
-      { path: 'medicacion', component: MedicationComponent }
+      { path: 'medicacion', component: MedicationComponent },
+      { path: 'reportes', component: ReportsComponent }
     ]
   }
 ];

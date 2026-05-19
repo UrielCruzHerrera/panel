@@ -14,11 +14,9 @@ import { CommonModule } from '@angular/common';
 
         <div class="appbar-info">
           <div class="info-item">
-            <span class="info-icon">📅</span>
             <span class="info-text">{{ currentDate() }}</span>
           </div>
           <div class="info-item">
-            <span class="info-icon">🕐</span>
             <span class="info-text">{{ currentTime() }}</span>
           </div>
           <div class="info-item day-indicator">

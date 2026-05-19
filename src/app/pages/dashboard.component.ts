@@ -15,49 +15,37 @@ import { CardComponent } from '../shared/components/card.component';
           title="Temperatura"
           value="28.5"
           unit="°C"
-        >
-          <span card-icon>🌡️</span>
-        </app-card>
+        ></app-card>
 
         <app-card
           title="Humedad"
           value="65"
           unit="%"
-        >
-          <span card-icon>💧</span>
-        </app-card>
+        ></app-card>
 
         <app-card
           title="Amoniaco"
           value="12"
           unit="ppm"
-        >
-          <span card-icon>☁️</span>
-        </app-card>
+        ></app-card>
 
         <app-card
           title="Edad de la Parvada"
           value="25"
           unit="días"
-        >
-          <span card-icon>📅</span>
-        </app-card>
+        ></app-card>
 
         <app-card
           title="Aves Vivas"
           value="1,250"
           unit="unidades"
-        >
-          <span card-icon>🐔</span>
-        </app-card>
+        ></app-card>
 
         <app-card
           title="Peso Actual"
           value="1.85"
           unit="kg"
-        >
-          <span card-icon>⚖️</span>
-        </app-card>
+        ></app-card>
       </div>
 
       <div class="dashboard-section">
@@ -66,17 +54,17 @@ import { CardComponent } from '../shared/components/card.component';
           <div class="equipment-card">
             <h3>Ventiladores</h3>
             <p class="equipment-value">4/4</p>
-            <p class="equipment-status" [class.active]="true">✓ Activos</p>
+            <p class="equipment-status" [class.active]="true">Activos</p>
           </div>
           <div class="equipment-card">
             <h3>Criadoras</h3>
             <p class="equipment-value">3/3</p>
-            <p class="equipment-status" [class.active]="true">✓ Activas</p>
+            <p class="equipment-status" [class.active]="true">Activas</p>
           </div>
           <div class="equipment-card">
             <h3>Bombas</h3>
             <p class="equipment-value">2/2</p>
-            <p class="equipment-status" [class.active]="true">✓ Activas</p>
+            <p class="equipment-status" [class.active]="true">Activas</p>
           </div>
         </div>
       </div>

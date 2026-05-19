@@ -16,7 +16,6 @@ interface MenuItem {
     <aside class="sidebar">
       <div class="sidebar-header">
         <div class="logo">
-          <span class="logo-icon">🐔</span>
           <span class="logo-text">AviMax</span>
         </div>
       </div>
@@ -29,7 +28,6 @@ interface MenuItem {
             [routerLinkActiveOptions]="{ exact: false }"
             class="nav-item"
           >
-            <span class="nav-icon">{{ item.icon }}</span>
             <span class="nav-label">{{ item.label }}</span>
           </a>
         }
@@ -157,13 +155,14 @@ interface MenuItem {
 })
 export class SidebarComponent {
   menuItems = input<MenuItem[]>([
-    { label: 'Dashboard', icon: '📊', route: '/dashboard' },
-    { label: 'Ventilación', icon: '💨', route: '/ventilacion' },
-    { label: 'Criadoras', icon: '🔥', route: '/criadoras' },
-    { label: 'Bombas', icon: '💧', route: '/bombas' },
-    { label: 'Mortalidad', icon: '📋', route: '/mortalidad' },
-    { label: 'Consumo Diario', icon: '🍗', route: '/consumo' },
-    { label: 'Registro de Peso', icon: '⚖️', route: '/peso' },
-    { label: 'Medicación', icon: '💊', route: '/medicacion' }
+    { label: 'Dashboard', icon: '', route: '/dashboard' },
+    { label: 'Ventilación', icon: '', route: '/ventilacion' },
+    { label: 'Criadoras', icon: '', route: '/criadoras' },
+    { label: 'Bombas', icon: '', route: '/bombas' },
+    { label: 'Mortalidad', icon: '', route: '/mortalidad' },
+    { label: 'Consumo Diario', icon: '', route: '/consumo' },
+    { label: 'Registro de Peso', icon: '', route: '/peso' },
+    { label: 'Medicación', icon: '', route: '/medicacion' },
+    { label: 'Reportes', icon: '', route: '/reportes' }
   ]);
 }
